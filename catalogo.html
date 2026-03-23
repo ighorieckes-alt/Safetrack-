@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bolsa Inteligente - Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Bolsa<span>Inteligente</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="configuracao.html">Configurar Sensor</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cadastro" onclick="window.location.href='cadastro.html'">Cadastrar</button>
+    </header>
+
+    <main>
+        <section class="conteudo-pagina">
+            <h2 style="color: #00d2d3; margin-bottom: 30px;">Nossos Modelos Tecnológicos</h2>
+            <div class="grid-catalogo">
+                
+                <!-- Modelo 1 -->
+                <div class="card">
+                    <div class="container-foto">
+                        <img src="https://images.unsplash.com" class="img-produto">
+                        <div class="info-hover">
+                            <p>Sensor de Proximidade<br>Alarme 110db<br>Trava Biométrica</p>
+                        </div>
+                    </div>
+                    <h3>Urban Shield</h3>
+                    <p>Proteção urbana máxima com estilo.</p>
+                    <button class="btn-acao">Ver Detalhes</button>
+                </div>
+
+                <!-- Modelo 2 -->
+                <div class="card">
+                    <div class="container-foto">
+                        <img src="https://images.unsplash.com" class="img-produto">
+                        <div class="info-hover">
+                            <p>Rastreamento Global GPS<br>Carregamento Solar<br>Resistente à Água</p>
+                        </div>
+                    </div>
+                    <h3>Explorer GPS</h3>
+                    <p>Aventura segura em qualquer lugar.</p>
+                    <button class="btn-acao">Ver Detalhes</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="dog-container">
+        <div class="balao">Escolha seu modelo favorito! 🎒</div>
+        <img src="https://cdn-icons-png.flaticon.com" id="dog-robo" width="80">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

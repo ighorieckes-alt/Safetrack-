@@ -1,0 +1,85 @@
+/* Importação de Fonte Corrigida */
+@import url('https://fonts.googleapis.com');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0b0e14;
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: rgba(11, 14, 20, 0.95);
+    border-bottom: 2px solid #00d2d3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { font-size: 1.5rem; font-weight: 700; color: #fff; }
+.logo span { color: #00d2d3; text-shadow: 0 0 10px rgba(0, 210, 211, 0.5); }
+
+.nav-links { display: flex; list-style: none; gap: 25px; }
+.nav-links a { text-decoration: none; color: #a0a0a0; font-weight: 600; transition: 0.3s; }
+.nav-links a:hover { color: #00d2d3; }
+
+.btn-cadastro {
+    background: #ff4757; color: white; border: none;
+    padding: 10px 20px; border-radius: 8px; cursor: pointer;
+    font-weight: bold; box-shadow: 0 0 15px rgba(255, 71, 87, 0.3);
+}
+
+.conteudo-pagina { padding: 50px 10%; text-align: center; }
+
+.grid-catalogo { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+
+.card {
+    background: #1a1f29; padding: 30px; border-radius: 20px;
+    width: 280px; border: 1px solid #30363d; transition: 0.3s;
+}
+.card:hover { border-color: #00d2d3; transform: translateY(-5px); }
+.card h3 { color: #00d2d3; margin-bottom: 10px; }
+
+.container-foto { position: relative; width: 100%; overflow: hidden; border-radius: 10px; margin-bottom: 15px; }
+.img-produto { width: 100%; height: 220px; object-fit: cover; transition: transform 0.5s ease; }
+
+.info-hover {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 210, 211, 0.85); color: #0b0e14;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 20px; font-size: 0.9rem; font-weight: 700;
+    opacity: 0; transition: opacity 0.4s ease;
+}
+.card:hover .info-hover { opacity: 1; }
+.card:hover .img-produto { transform: scale(1.1); }
+
+.opcoes-cores { display: flex; justify-content: center; gap: 10px; margin: 15px 0; }
+.cor { width: 20px; height: 20px; border-radius: 50%; border: 2px solid #fff; cursor: pointer; }
+.preta { background: #000; } .azul { background: #0044ff; } .cinza { background: #555; }
+.verde { background: #2e4d2e; } .vermelha { background: #ff0000; }
+
+.btn-acao {
+    background: #00d2d3; color: #0b0e14; border: none;
+    padding: 12px; width: 100%; border-radius: 10px;
+    font-weight: 700; cursor: pointer;
+}
+
+#dog-container { position: fixed; bottom: 20px; left: 20px; z-index: 1000; }
+.balao {
+    background: #00d2d3; color: #0b0e14; padding: 12px;
+    border-radius: 15px; font-size: 13px; font-weight: bold;
+    margin-bottom: 5px; box-shadow: 0 5px 15px rgba(0, 210, 211, 0.3);
+}
+input:focus {
+    outline: none;
+    border-color: #00d2d3;
+    box-shadow: 0 0 10px rgba(0, 210, 211, 0.3);
+}

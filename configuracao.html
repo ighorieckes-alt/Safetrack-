@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bolsa Inteligente - Configurar Sensor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Bolsa<span>Inteligente</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="configuracao.html">Configurar Sensor</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cadastro" onclick="window.location.href='cadastro.html'">Cadastrar</button>
+    </header>
+
+   <main>
+    <section class="conteudo-pagina">
+        <h2 style="color: #00d2d3; margin-bottom: 10px;">Ajustes do Sensor IoT</h2>
+        <p style="color: #a0a0a0; margin-bottom: 30px;">Defina a distância de segurança da sua bolsa</p>
+        
+        <div class="form-container">
+            <!-- Display do Valor Atual -->
+            <div style="background: #0b0e14; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #30363d;">
+                <h3 style="font-size: 0.9rem; color: #a0a0a0; text-transform: uppercase;">Raio de Proteção</h3>
+                <div style="font-size: 3.5rem; color: #00d2d3; font-weight: 700; margin: 10px 0;">
+                    <span id="metros">5</span><small style="font-size: 1.5rem;">m</small>
+                </div>
+            </div>
+
+            <!-- O Slider (Controle Deslizante) -->
+            <input type="range" id="range-sensor" min="1" max="20" value="5" style="width: 100%; cursor: pointer; accent-color: #00d2d3;">
+            
+            <div style="display: flex; justify-content: space-between; margin-top: 10px; color: #555; font-weight: bold; font-size: 0.8rem;">
+                <span>MIN (1m)</span>
+                <span>MAX (20m)</span>
+            </div>
+
+            <button class="btn-acao" style="margin-top: 30px;" onclick="confirmarConfig()">Salvar no Dispositivo</button>
+        </div>
+    </section>
+</main>
+
+
+    <div id="dog-container">
+        <div class="balao">Arraste a barra para definir o limite de distância! 🦴</div>
+        <img src="https://cdn-icons-png.flaticon.com" id="dog-robo" width="80">
+    </div>
+
+    <!-- Importante: o script.js deve estar linkado para o slider funcionar -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -24,23 +24,30 @@
             <div class="form-container">
                 <h2 style="color: #00d2d3; margin-bottom: 10px;">Vincular Nova Bolsa</h2>
                 <p style="margin-bottom: 25px; color: #a0a0a0; font-size: 0.9rem;">Crie sua conta para ativar o rastreamento em tempo real e a trava biométrica.</p>
-                
-                <div style="text-align: left;">
-                    <label style="font-size: 0.8rem; color: #00d2d3; font-weight: bold;">NOME COMPLETO</label>
-                    <input type="text" id="nome-user" placeholder="Ex: João Silva">
-                    
-                    <label style="font-size: 0.8rem; color: #00d2d3; font-weight: bold;">E-MAIL DE RECUPERAÇÃO</label>
-                    <input type="email" id="email-user" placeholder="seu@email.com">
-                    
-                    <label style="font-size: 0.8rem; color: #00d2d3; font-weight: bold;">ID DO SENSOR (ETIQUETA)</label>
-                    <input type="text" id="id-sensor" placeholder="Ex: SB-IOT-9921">
+            
+<!-- Wesley: adiconei o form e o pre -->
+                <div class="pre-cadastro">
+                    <form>
+                            <div class="dadoscadastro">
 
-                    <label style="font-size: 0.8rem; color: #00d2d3; font-weight: bold;">SENHA DE ACESSO</label>
-                    <input type="password" id="senha-user" placeholder="••••••••">
-                </div>
-                
+                                <label class="dadosletras">NOME COMPLETO</label>
+                                <input class="centralizar" type="text" id="nome-user" placeholder="Ex: João Silva">
+                                
+                                <label class="dadosletras">E-MAIL</label>
+                                <input class="centralizar" type="email" id="email-user" placeholder="seu@email.com">
+                                
+                                <label class="dadosletras">ID DO SENSOR (ETIQUETA)</label>
+                                <input class="centralizar" type="text" id="id-sensor" placeholder="Ex: SB-IOT-9921">
+
+                                <label class="dadosletras">SENHA DE ACESSO</label>
+                                <input class="centralizar" type="password" id="senha-user" placeholder="••••••••">
+                        </div>
+                    
+                </form>
+<!-- mudança final -->
+
                 <!-- Chamando a função realizarCadastro do seu script.js -->
-                <button class="btn-acao" style="margin-top: 20px;" onclick="realizarCadastro()">Ativar Sistema IoT</button>
+                <button class="btn-acao" onclick="realizarCadastro()">Ativar Sistema IoT</button>
                 
                 <p style="margin-top: 15px; font-size: 0.7rem; color: #555;">Ao clicar, você aceita os termos de segurança e criptografia de dados.</p>
             </div>
